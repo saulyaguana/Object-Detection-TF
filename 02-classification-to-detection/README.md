@@ -33,3 +33,16 @@ There is another representation that are used in YOLO models:
 | 2: Panda | 135 | 150 | 170 | 280 |
 
 + Object detection predicts where the object is in the image
+
+# Classification and Regression with a Single Neural Network
+
+The output in object detection consists of a collection of bounding boxes and for each bounding box we have
+a class label.
+
+Finding bounding box coordinates is a regression problem while assigning a label is a classification problem.
+
+For solving an object detection problem we first extarct features using a bank of colvolutional layers and then
+use these features to solve two problems:
+
+1. Image classification problem to assign labels
+2. Bounding box coordinate regression problem
