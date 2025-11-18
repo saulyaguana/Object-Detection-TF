@@ -88,3 +88,11 @@ change the width and height of the tensor, in that case we use only 1x1 convolut
 
 Whenever you want to change the depth of a tensor without changing its width and height you can use 1x1
 convolution filters and the number of convolution filters you use is equal to the new depth you want
+
+---
+
+# What is Intersection over Union (IoU)?
+
+It is an evaluation metric for object detection for knowing the quality of the predicted bounding boxes.
+
+If we want to know the quality and how good the predictions are we use IoU
